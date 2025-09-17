@@ -1,0 +1,30 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0-alpha",
+  "description": "A High Five Sandbox website",
+  "private": true,
+  "type": "module",
+  "license": "ISC",
+  "author": "High Five <hello@high-five.dev> (https://www.high-five.dev/)",
+  "contributors": [
+    {
+      "name": "Harm Putman",
+      "email": "harm@high-five.dev",
+      "url": "https://harm.is-a.dev/"
+    }
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
+    "tailwindcss": "^4.1.13",
+    "vite": "^7.1.5",
+    "vite-plugin-restart": "^1.0.0"
+  },
+  "engines": {
+    "node": "22"
+  }
+}
