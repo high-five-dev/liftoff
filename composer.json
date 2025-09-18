@@ -21,16 +21,6 @@
         "issues": "https://github.com/high-five-dev/liftoff/issues",
         "source": "https://github.com/high-five-dev/liftoff"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org",
-            "only": [
-                "wpackagist-plugin/*",
-                "wpackagist-theme/*"
-            ]
-        }
-    ],
     "require": {
         "craftcms/cms": "^5.0.0",
         "high-five/craft-hyperdrive": "dev-main",
@@ -49,14 +39,18 @@
             "@php composer-scripts/post-create-project.php",
             "echo 'Cleaning composer.json'",
             "@composer config --unset scripts.post-create-project-cmd",
+            "@composer config --unset post-root-package-install",
             "@composer config --unset name",
+            "@composer config --unset description",
+            "@composer config --unset version",
+            "@composer config --unset authors",
+            "@composer config --unset keywords",
+            "@composer config --unset support",
             "@composer config --unset license",
             "@composer config --unset type",
             "@composer update --ignore-platform-reqs",
             "@composer dump-autoload -o",
-            "rm -rf composer-scripts",
-            "make start",
-            "make install"
+            "rm -rf composer-scripts"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example.dev', '.env');\""
