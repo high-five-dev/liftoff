@@ -20,6 +20,7 @@
     "devDependencies": {
         "@tailwindcss/postcss": "^4.1.13",
         "@tailwindcss/vite": "^4.1.13",
+        "daisyui": "^5.1.13",
         "tailwindcss": "^4.1.13",
         "vite": "^7.1.5",
         "vite-plugin-restart": "^1.0.0"

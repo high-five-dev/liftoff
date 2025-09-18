@@ -10,7 +10,7 @@ Skip the countdown and head straight to orbit with a starter kit that’s ready 
 ## ✨ Features
 
 - Local development [powered by DDEV](https://ddev.com/)
-- [Vite](https://vitejs.dev/) and [Tailwind CSS](https://tailwindcss.com/) based front-end build tooling.
+- [Vite](https://vitejs.dev/), [Tailwind CSS](https://tailwindcss.com/) and [daisyUI](https://daisyui.com/) based front-end build tooling.
 
 ---
 

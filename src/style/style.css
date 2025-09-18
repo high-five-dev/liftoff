@@ -1,20 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,400&family=Pirata+One&display=swap");
 @import "tailwindcss";
+@plugin "daisyui";
+
 @source "../../vendor/high-five/craft-hyperdrive";
 
 @theme {
-    --font-sans: "Montserrat", sans-serif;
-    --font-serif: "Pirata One", serif;
-
     --color-primary: #DD514C;
 }
 
-.btn {
-    @apply block rounded-md px-5 py-2.5 text-sm font-medium;
-}
-.btn--primary {
-    @apply bg-primary text-white transition hover:bg-primary/75 dark:hover:bg-primary/50;
-}
-.btn--secondary {
-    @apply hidden bg-gray-100 text-primary transition hover:text-primary/75 sm:block dark:bg-gray-800 dark:text-white dark:hover:text-white/75;
+@utility btn {
+    @apply rounded-full;
 }
