@@ -16,7 +16,7 @@ Skip the countdown and head straight to orbit with a starter kit that’s ready 
 
 ## 🔧 Getting Started
 
-1. **Clone the repo:**
+### 1. Clone the repo:
 
 If you already have PHP and Composer running on your host machine, you can run the following command
 ```shell
@@ -29,15 +29,6 @@ If you'd rather not set up PHP, you can create the project with a desposable Doc
 docker run --rm -it -v "$PWD":/app -v ${COMPOSER_HOME:-$HOME/.composer}:/tmp composer create-project high-five/liftoff {PROJECT NAME} --ignore-platform-reqs
 ```
 
-2. Start DDEV & install dependencies
-```shell
-cd {PROJECT NAME}
-ddev composer install
-ddev npm ci
-```
+### 2. Launc
 
-3. Install Craft CMS
-```shell
-ddev craft install
-```
-4. Run `ddev launch` to open the project in your browser
+Run `make launch` to open the project in your browser

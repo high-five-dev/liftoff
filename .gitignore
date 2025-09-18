@@ -1,5 +1,28 @@
-/.env
-/.idea
-/vendor
+# IDE
+.idea
+.project
+.buildpath
+.settings
+.phpintel
+.php-cs-fixer.cache
+
+# System files
 .DS_Store
+Thumbs.db
+
+# Craft
+config/license.key
+config/project
+httpdocs/cpresources/
+storage/config-deltas/
+storage/logs/
+
+# Install files
+vendor
 node_modules
+
+# Env
+.env
+
+# Frontend build
+httpdocs/dist/
